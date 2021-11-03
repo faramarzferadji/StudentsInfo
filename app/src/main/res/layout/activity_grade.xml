@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/editTextTextgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Grade Student"
+       app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textViewscience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Science"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextgrade"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25dp"
+
+        />
+
+    <EditText
+        android:id="@+id/editTextNumberScience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+      app:layout_constraintStart_toStartOf="@id/editTextTextgrade"
+        app:layout_constraintEnd_toEndOf="@id/editTextTextgrade"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextgrade"
+        />
+
+    <TextView
+        android:id="@+id/textViewphysic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phisics"
+       app:layout_constraintStart_toStartOf="@id/textViewscience"
+        app:layout_constraintEnd_toEndOf="@id/textViewscience"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewscience"
+        />
+
+    <EditText
+        android:id="@+id/editTextNumberPhisics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+      app:layout_constraintStart_toStartOf="@id/editTextNumberScience"
+        app:layout_constraintEnd_toEndOf="@id/editTextNumberScience"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumberScience"
+        />
+
+    <TextView
+        android:id="@+id/textViewMath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Math"
+        app:layout_constraintStart_toStartOf="@id/textViewphysic"
+        app:layout_constraintEnd_toEndOf="@id/textViewphysic"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewphysic"
+        />
+
+    <EditText
+        android:id="@+id/editTextNumberMath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@id/editTextNumberPhisics"
+        app:layout_constraintEnd_toEndOf="@id/editTextNumberPhisics"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumberPhisics"
+
+        />
+
+    <TextView
+        android:id="@+id/textViewHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hiatory"
+        app:layout_constraintStart_toStartOf="@id/textViewMath"
+        app:layout_constraintEnd_toEndOf="@id/textViewMath"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewMath"
+        />
+
+    <EditText
+        android:id="@+id/editTextNumberHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@id/editTextNumberMath"
+        app:layout_constraintEnd_toEndOf="@id/editTextNumberMath"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumberMath"
+
+
+        />
+
+    <TextView
+        android:id="@+id/textViewAverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average"
+        app:layout_constraintStart_toStartOf="@id/textViewHistory"
+        app:layout_constraintEnd_toEndOf="@id/textViewHistory"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewHistory"
+        />
+
+    <EditText
+        android:id="@+id/editTextNumberAverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@id/editTextNumberHistory"
+        app:layout_constraintEnd_toEndOf="@id/editTextNumberHistory"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumberHistory"
+        />
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        app:layout_constraintStart_toStartOf="@id/textViewAverage"
+        app:layout_constraintEnd_toEndOf="@id/textViewAverage"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewAverage"
+        />
+
+    <EditText
+        android:id="@+id/editTextNumberResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@id/editTextNumberAverage"
+        app:layout_constraintEnd_toEndOf="@id/editTextNumberAverage"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumberAverage"
+        />
+
+    <Button
+        android:id="@+id/buttonAVG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AVG"
+       app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="clear"
+        app:layout_constraintTop_toTopOf="@id/buttonAVG"
+        app:layout_constraintBottom_toBottomOf="@id/buttonAVG"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintLeft_toRightOf="@id/buttonAVG"
+
+        />
+
+    <Button
+        android:id="@+id/buttonReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        app:layout_constraintTop_toTopOf="@id/buttonClear"
+        app:layout_constraintBottom_toBottomOf="@id/buttonClear"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintLeft_toRightOf="@id/buttonClear"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
